@@ -1,0 +1,36 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: photonic-modulator-models
+  title: Semiconductor Physics and Devices
+  description: Drift-diffusion modelling of silicon pn-junctions for photonic modulators — from equilibrium bands to biased IV/CV and optical index shifts.
+  keywords: [semiconductor, silicon photonics, pn-junction, drift-diffusion, modulator]
+  authors:
+    - name: Epsilon Forge
+  license: MIT
+  github: https://github.com/EpsilonForge/PhotonicModulatorModels
+  toc:
+    - file: index.md
+    - file: semiconductor.ipynb
+  exclude:
+    - _build
+    - Thumbs.db
+    - .DS_Store
+    - "**/.ipynb_checkpoints"
+    - "**/.venv"
+    - "**/venv"
+    - tempCodeRunnerFile.py
+site:
+  template: book-theme
+  title: Semiconductor Physics and Devices
+  options:
+    logo_text: Photonic Modulator Models
+  nav:
+    - title: Home
+      url: /index
+  actions:
+    - title: GitHub
+      url: https://github.com/EpsilonForge/PhotonicModulatorModels
+    - title: Notebook
+      url: https://github.com/EpsilonForge/PhotonicModulatorModels/blob/main/semiconductor.ipynb
+  domains: []

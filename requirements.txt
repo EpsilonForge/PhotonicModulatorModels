@@ -1,0 +1,8 @@
+# Runtime for executing semiconductor.ipynb with MyST (--execute)
+numpy
+scipy
+matplotlib
+jupyter-server
+ipykernel
+nbformat
+nbclient
