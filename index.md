@@ -1,12 +1,11 @@
 ---
-title: Semiconductor Physics and Devices
-description: MyST website built from semiconductor.ipynb — equilibrium pn-junction theory, drift-diffusion simulation, and silicon optical models.
+title: Photonic Modulator Models
+description: A collection of notes and analytic models to demostrate different principles of photonic modulation technology.
 ---
 
 # Photonic Modulator Models
 
-Executable notes on **semiconductor physics and devices** for silicon photonic modulators,
-published as a [MyST](https://mystmd.org) website on GitHub Pages.
+Executable notes on silicon photonic modulators, published as a [MyST](https://mystmd.org) website on GitHub Pages.
 
 The full study lives in [the semiconductor notebook](./semiconductor.ipynb).
 

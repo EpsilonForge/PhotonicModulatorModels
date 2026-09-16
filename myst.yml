@@ -2,8 +2,8 @@
 version: 1
 project:
   id: photonic-modulator-models
-  title: Semiconductor Physics and Devices
-  description: Drift-diffusion modelling of silicon pn-junctions for photonic modulators — from equilibrium bands to biased IV/CV and optical index shifts.
+  title: Photonic Modulator Models
+  description: A collection of notes and analytic models to demostrate different principles of photonic modulation technology.
   keywords: [semiconductor, silicon photonics, pn-junction, drift-diffusion, modulator]
   authors:
     - name: Epsilon Forge
@@ -22,7 +22,7 @@ project:
     - tempCodeRunnerFile.py
 site:
   template: book-theme
-  title: Semiconductor Physics and Devices
+  title: Photonic Modulator Models
   options:
     logo_text: Photonic Modulator Models
   nav:
