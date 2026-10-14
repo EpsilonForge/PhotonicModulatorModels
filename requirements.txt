@@ -1,4 +1,4 @@
-# Runtime for executing semiconductor.ipynb with MyST (--execute)
+# Runtime for executing the notebooks with MyST (--execute)
 numpy
 scipy
 matplotlib
