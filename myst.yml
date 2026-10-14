@@ -11,7 +11,7 @@ project:
   github: https://github.com/EpsilonForge/PhotonicModulatorModels
   toc:
     - file: index.md
-    - file: semiconductor.ipynb
+    - file: pn_junction.ipynb
   exclude:
     - _build
     - Thumbs.db
@@ -32,5 +32,5 @@ site:
     - title: GitHub
       url: https://github.com/EpsilonForge/PhotonicModulatorModels
     - title: Notebook
-      url: https://github.com/EpsilonForge/PhotonicModulatorModels/blob/main/semiconductor.ipynb
+      url: https://github.com/EpsilonForge/PhotonicModulatorModels/blob/main/pn_junction.ipynb
   domains: []
