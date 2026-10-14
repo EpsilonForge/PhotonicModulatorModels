@@ -12,6 +12,7 @@ project:
   toc:
     - file: index.md
     - file: pn_junction.ipynb
+    - file: pn_junction_phase_shifter.ipynb
   exclude:
     - _build
     - Thumbs.db
@@ -31,6 +32,8 @@ site:
   actions:
     - title: GitHub
       url: https://github.com/EpsilonForge/PhotonicModulatorModels
-    - title: Notebook
+    - title: PN Junction
       url: https://github.com/EpsilonForge/PhotonicModulatorModels/blob/main/pn_junction.ipynb
+    - title: Phase Shifter
+      url: https://github.com/EpsilonForge/PhotonicModulatorModels/blob/main/pn_junction_phase_shifter.ipynb
   domains: []

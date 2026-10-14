@@ -5,32 +5,13 @@ description: A collection of notes and analytic models to demostrate different p
 
 # Photonic Modulator Models
 
-Executable notes on silicon photonic modulators, published as a [MyST](https://mystmd.org) website on GitHub Pages.
+Executable notes on silicon photonic modulators.
 
-The full study lives in [the semiconductor notebook](./semiconductor.ipynb).
+This collection of notebooks intends to serve as a textbook-style reference of simple analytic models that explain the fundamental physics of photonic modulators and related devices. The goal is to build intuition by deriving each result from first principles and then making it concrete with a small, self-contained Python implementation that the reader can run and modify.
 
-## Contents
+The notes begin with a [biased p–n junction](./pn_junction.ipynb), covering the general properties of semiconductors, carrier statistics in intrinsic and extrinsic material, the equilibrium carrier concentrations, and the coupled Poisson, drift-diffusion and generation–recombination equations that describe the junction away from equilibrium. 
 
-- **General concepts** — bands, effective mass, Drude picture
-- **Equilibrium concentrations** — intrinsic/extrinsic carriers, Poisson–Boltzmann solution, Sze depletion approximation
-- **Biased junction** — Poisson + drift-diffusion + SRH recombination, steady-state IV, charge, dynamic conductance/capacitance
-- **Optical properties** — Sellmeier index, Franta data, Drude free-carrier $\Delta n$ / $k$ at 1550 nm
+Then, we move to a [carrier-depletion p–n junction phase shifter](./pn_junction_phase_shifter.ipynb), where the abrupt-junction electrostatics and the depletion approximation are combined with the optical properties of doped silicon — including the free-carrier Drude contribution to the refractive index — and with the lateral modes of a ridge waveguide to obtain the phase shift produced by the depletion region.
 
-## Run locally
+Together the notebooks trace the path from basic semiconductor physics to the optical response of a silicon modulator. They are written to be read in order, while each remains self-contained and can be run on its own.
 
-```bash
-pip install -r requirements.txt
-npm install -g mystmd   # or: pip install mystmd
-myst start              # preview with stored outputs
-myst start --execute    # re-execute the notebook
-myst build --html       # static build in _build/html
-myst build --execute --html  # re-execute, then build
-```
-
-Python dependencies are listed in `requirements.txt` (`numpy`, `scipy`, `matplotlib` plus `jupyter-server`/`ipykernel` for `--execute`).
-
-## Deploy
-
-Pushes to `main` trigger `.github/workflows/deploy.yml`, which builds with `myst build --execute --html` and deploys `_build/html` to GitHub Pages.
-Enable it once under **Settings → Pages → Source: GitHub Actions**.
-The site is served at `https://<org>.github.io/PhotonicModulatorModels/`.
